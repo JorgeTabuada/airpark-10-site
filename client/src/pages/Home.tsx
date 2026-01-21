@@ -188,9 +188,11 @@ export default function Home() {
                 </p>
               </div>
               <div className="text-center">
-                <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4 rounded-full">
-                  Fazer Reserva Agora
-                </Button>
+                <a href="/reserva">
+                  <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4 rounded-full">
+                    Fazer Reserva Agora
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -428,9 +430,11 @@ export default function Home() {
                 <p className="text-gray-600 text-sm mb-5">
                   10% de desconto em todas as reservas de Janeiro.
                 </p>
-                <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
-                  Aproveitar Agora
-                </Button>
+                <a href="/reserva">
+                  <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
+                    Aproveitar Agora
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -448,9 +452,11 @@ export default function Home() {
                 <p className="text-gray-600 text-sm mb-5">
                   5% de desconto extra em todas as reservas de Fevereiro.
                 </p>
-                <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
-                  Aproveitar Agora
-                </Button>
+                <a href="/reserva">
+                  <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
+                    Aproveitar Agora
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -484,9 +490,11 @@ export default function Home() {
             Reserve o seu lugar com a Airpark e viaje descansado.
           </p>
           <div className="flex flex-col gap-4 items-center">
-            <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-8 py-3 rounded-full">
-              Fazer Reserva
-            </Button>
+            <a href="/reserva">
+              <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-8 py-3 rounded-full">
+                Fazer Reserva
+              </Button>
+            </a>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 size={16} className="text-gold" />
