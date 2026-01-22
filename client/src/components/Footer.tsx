@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <a href="https://www.facebook.com/airpark.pt/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Facebook size={20} /></a>
               <a href="https://www.instagram.com/_airpark_/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Instagram size={20} /></a>
-              <a href="https://www.linkedin.com/company/airpark-portugal/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Linkedin size={20} /></a>
+              <a href="https://www.linkedin.com/company/airpark-estacionamento-aeroporto/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Linkedin size={20} /></a>
               <a href="https://youtube.com/@multipark-l5x?si=GQonq_LyqDpIegEE" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
