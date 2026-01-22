@@ -29,37 +29,38 @@ export default function Reserva() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Header Section with Background Image and Airport Buttons */}
-      <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
-        {/* Background Image - NO BLUR */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/images/banner_prata.png)'
-          }}
-        />
-        {/* Light Overlay for readability */}
-        <div className="absolute inset-0 bg-black/20" />
-        
-        {/* Airport Buttons Overlay */}
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 px-4">
-            {airports.map((airport) => (
-              <a
-                key={airport.id}
-                href={airport.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative"
-              >
-                <button className="bg-[#003D82] hover:bg-[#002A5C] text-white font-bold text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-3xl">
-                  {airport.badge}
-                </button>
-              </a>
-            ))}
+    <div className="min-h-screen bg-white">
+      {/* Top Banner with Airport Buttons */}
+      <section className="bg-gradient-to-r from-[#003D82] to-[#0052a8] py-6 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <h2 className="text-white font-bold text-lg sm:text-xl">Escolha o seu aeroporto:</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {airports.map((airport) => (
+                <a
+                  key={airport.id}
+                  href={airport.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="bg-white hover:bg-gray-100 text-[#003D82] font-bold text-base px-6 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    {airport.badge}
+                  </button>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
+      </section>
+
+      {/* Hero Image Section */}
+      <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
+        <img 
+          src="/images/banner_prata.png" 
+          alt="Airpark 10 Anos - Uma Década de Excelência em Estacionamento Aeroportuário Premium"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
       </section>
 
       {/* Airports Grid */}

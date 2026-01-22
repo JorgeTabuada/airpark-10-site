@@ -15,10 +15,10 @@ export default function Footer() {
               Há 10 anos a redefinir o estacionamento aeroportuário em Portugal. Segurança, conforto e o melhor preço em Lisboa, Porto e Faro.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/AirparkPortugal" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Facebook size={20} /></a>
-              <a href="https://www.instagram.com/airpark.pt/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.facebook.com/airpark.pt/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/_airpark_/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Instagram size={20} /></a>
               <a href="https://www.linkedin.com/company/airpark-portugal/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Linkedin size={20} /></a>
-              <a href="https://www.youtube.com/@AirparkPortugal" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Youtube size={20} /></a>
+              <a href="https://youtube.com/@multipark-l5x?si=GQonq_LyqDpIegEE" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
 
