@@ -322,8 +322,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ofertas Mensais Section */}
-      <section id="materiais" className="py-16 md:py-24 bg-gray-50 border-t border-gray-200">
+      {/* Ofertas Mensais Section - TEMPORARIAMENTE ESCONDIDA */}
+      {false && <section id="materiais" className="py-16 md:py-24 bg-gray-50 border-t border-gray-200">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">Ofertas Mensais</h2>
@@ -412,7 +412,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
       {/* Offers Section */}
       <section id="ofertas" className="py-16 md:py-24 relative overflow-hidden bg-white border-t border-gray-200">
