@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import FAQ from "./pages/FAQ";
 import Home from "./pages/Home";
 import Reserva from "./pages/Reserva";
+import TermosCondicoes from "./pages/TermosCondicoes";
 
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/reserva"} component={Reserva} />
+      <Route path={"/termos-e-condicoes"} component={TermosCondicoes} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

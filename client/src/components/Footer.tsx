@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -89,7 +90,7 @@ export default function Footer() {
             <p className="mt-1">Campanha 10 Anos - 12 Meses, 12 Prémios</p>
           </div>
           <div className="flex gap-4 text-sm">
-            <a href="https://www.airpark.pt/" className="text-gray-300 hover:text-gold transition-colors">Termos e Condições</a>
+            <Link href="/termos-e-condicoes" className="text-gray-300 hover:text-gold transition-colors">Termos e Condições</Link>
             <a href="https://www.airpark.pt/" className="text-gray-300 hover:text-gold transition-colors">Política de Privacidade</a>
             <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gold transition-colors">Livro de Reclamações</a>
           </div>

@@ -91,6 +91,9 @@ export default function Home() {
               <p>
                 Lê as regras abaixo e entra na festa:
               </p>
+              <p className="text-sm text-gray-500 mt-2">
+                <a href="/termos-e-condicoes" className="text-gold hover:underline font-medium">Consulta aqui o Regulamento Completo da Campanha</a>
+              </p>
             </div>
 
             {/* Rules Section */}
