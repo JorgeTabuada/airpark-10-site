@@ -30,32 +30,35 @@ export default function Reserva() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Header Section with Background Image */}
-      <section className="relative py-32 px-4 overflow-hidden">
-        {/* Background Image with Blur */}
+      {/* Header Section with Background Image and Airport Buttons */}
+      <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
+        {/* Background Image - NO BLUR */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/images/banner_prata.png)',
-            filter: 'blur(3px)',
-            transform: 'scale(1.1)'
+            backgroundImage: 'url(/images/banner_prata.png)'
           }}
         />
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30" />
+        {/* Light Overlay for readability */}
+        <div className="absolute inset-0 bg-black/20" />
         
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-            Uma Década de Excelência
-          </h1>
-          <p className="text-2xl md:text-3xl text-white/95 font-light mb-8 drop-shadow-md">
-            Estacionamento Aeroportuário Premium
-          </p>
-          <div className="w-24 h-1 bg-[#D4A574] mx-auto mb-8"></div>
-          <p className="text-xl md:text-2xl text-white font-medium drop-shadow-md">
-            Escolha onde quer fazer a sua reserva
-          </p>
+        {/* Airport Buttons Overlay */}
+        <div className="relative z-10 h-full flex items-center justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 px-4">
+            {airports.map((airport) => (
+              <a
+                key={airport.id}
+                href={airport.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative"
+              >
+                <button className="bg-[#003D82] hover:bg-[#002A5C] text-white font-bold text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-3xl">
+                  {airport.badge}
+                </button>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
