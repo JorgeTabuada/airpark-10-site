@@ -10,17 +10,17 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-[#d4dce6] pt-14">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative bg-white pt-14">
+        <div className="max-w-7xl mx-auto">
           <img
-            src="/images/hero_10anos.svg"
-            alt="Airpark 10 Anos"
+            src="/images/post_linkedin_10anos.png"
+            alt="Airpark 10 Anos - Uma Década de Excelência em Estacionamento Aeroportuário"
             className="w-full h-auto block"
           />
         </div>
 
         {/* Buttons below image */}
-        <div className="text-center px-4 py-8 bg-[#d4dce6]">
+        <div className="text-center px-4 py-8 bg-white">
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="#ofertas">
               <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-6 py-3 rounded-full shadow-lg">
@@ -427,18 +427,22 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {/* Janeiro - 10% */}
-            <Card className="bg-gold/10 border-gold/30 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-gold text-black text-xs font-bold px-2 py-1 rounded-bl-lg">
+            <Card className="bg-white border-gold/30 relative overflow-hidden group">
+              <div className="absolute top-3 right-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">
                 ATIVO
               </div>
-              <CardContent className="p-5 md:p-6 text-center">
-                <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4 text-gold">
-                  <Gift size={24} />
-                </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/images/janeiro_escapadinha.png" 
+                  alt="Janeiro - Escapadinha de Inverno"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-5 md:p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-1">Janeiro</h3>
-                <p className="text-gold font-medium text-sm mb-3">Desconto de Aniversário</p>
+                <p className="text-gold font-medium text-sm mb-3">Escapadinha de Inverno</p>
                 <p className="text-gray-600 text-sm mb-5">
-                  10% de desconto em todas as reservas de Janeiro.
+                  10% de desconto + participação no sorteio da Escapadinha de Fim de Semana.
                 </p>
                 <a href="/reserva">
                   <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
@@ -449,18 +453,22 @@ export default function Home() {
             </Card>
 
             {/* Fevereiro - 5% */}
-            <Card className="bg-gold/10 border-gold/30 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-gold text-black text-xs font-bold px-2 py-1 rounded-bl-lg">
+            <Card className="bg-white border-gold/30 relative overflow-hidden group">
+              <div className="absolute top-3 right-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">
                 ATIVO
               </div>
-              <CardContent className="p-5 md:p-6 text-center">
-                <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4 text-gold">
-                  <Calendar size={24} />
-                </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/images/fevereiro_escapadinha.png" 
+                  alt="Fevereiro - Escapadinha Romântica"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-5 md:p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-1">Fevereiro</h3>
-                <p className="text-gold font-medium text-sm mb-3">Mês do Romance</p>
+                <p className="text-gold font-medium text-sm mb-3">Escapadinha Romântica</p>
                 <p className="text-gray-600 text-sm mb-5">
-                  5% de desconto extra em todas as reservas de Fevereiro.
+                  5% de desconto extra + participação no sorteio da Escapadinha de Fim de Semana.
                 </p>
                 <a href="/reserva">
                   <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
