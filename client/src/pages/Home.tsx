@@ -22,12 +22,16 @@ export default function Home() {
         {/* Buttons below image */}
         <div className="text-center px-4 py-8 bg-[#d4dce6]">
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-6 py-3 rounded-full shadow-lg">
-              Ver Ofertas do Mês
-            </Button>
-            <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 font-medium text-base px-6 py-3 rounded-full">
-              Conhecer a História
-            </Button>
+            <a href="#ofertas">
+              <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-6 py-3 rounded-full shadow-lg">
+                Ver Ofertas do Mês
+              </Button>
+            </a>
+            <a href="#timeline">
+              <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 font-medium text-base px-6 py-3 rounded-full">
+                Conhecer a História
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -135,7 +139,7 @@ export default function Home() {
                   Bilhete Vitalício para os Sorteios
                 </h4>
                 <p className="text-gray-600">
-                  Se reservares agora para o Verão, a tua reserva fica "ativa" o ano todo. Isso significa que, se em Março sortearmos gasolina ou em Abril uma mala de viagem, tu podes ser sorteado porque já estás na nossa lista. Basicamente: <strong>Reservas uma vez, habilitas-te aos prémios todos até à data da tua viagem.</strong>
+                  Quando fazes uma reserva, entras automaticamente nos sorteios mensais <strong>até à data da tua viagem</strong>. Por exemplo: se reservares agora para viajar em Julho, participas nos sorteios de Janeiro, Fevereiro, Março, Abril, Maio e Junho. Depois da tua viagem, só voltarás a participar quando fizeres uma nova reserva. <strong>Resumindo: Reservas uma vez, habilitas-te aos prémios todos até à data da tua viagem.</strong>
                 </p>
               </div>
 
@@ -203,7 +207,7 @@ export default function Home() {
       <section id="timeline" className="py-16 md:py-24 relative bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3">A Nossa Jornada</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3">Uma Década a Voar Consigo</h2>
             <div className="w-16 md:w-24 h-1 bg-gold mx-auto rounded-full"></div>
           </div>
 
@@ -217,9 +221,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">O Início da Viagem</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">A Revolução do Estacionamento em Lisboa</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    A Airpark nasce com uma missão simples: transformar a experiência de estacionamento aeroportuário, oferecendo um serviço premium a preços acessíveis.
+                    Nasce a Airpark (Multi Park S.A.) com um desafio claro à concorrência: provar que o Valet Parking no Aeroporto de Lisboa podia ser um serviço premium a preços Low Cost. Começámos com uma missão: a sua viagem começa quando nos entrega a chave.
                   </p>
                 </div>
               </div>
@@ -231,9 +235,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Segundo Parque</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">Mais Espaço, A Mesma Confiança</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Abrimos o nosso segundo parque, consolidando a nossa presença e aumentando a capacidade para servir mais clientes.
+                    A procura disparou. Para responder aos viajantes frequentes, inaugurámos o segundo parque, reforçando a segurança e a capacidade de resposta. O conceito de "Vá Descansado" começa a ganhar fama entre os passageiros.
                   </p>
                 </div>
               </div>
@@ -245,9 +249,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Terceiro Parque em Lisboa</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">Liderança no Aeroporto Humberto Delgado</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Continuamos a crescer com a abertura do terceiro parque em Lisboa, reforçando a nossa liderança na região.
+                    Abertura do terceiro parque em Lisboa. Consolidámos a nossa posição como a alternativa nº1 aos parques oficiais, oferecendo serviços extra como lavagens e carregamento elétrico, essenciais para quem viaja em negócios ou lazer.
                   </p>
                 </div>
               </div>
@@ -259,9 +263,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Resiliência na Pandemia</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">Resiliência e Segurança</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Sobrevivemos à pandemia, mantendo sempre os nossos serviços ativos e apoiando os clientes que continuaram a confiar em nós.
+                    Num ano em que o mundo parou, a Airpark manteve-se firme. Reforçámos protocolos de higiene e mantivemos o serviço ativo para quem não podia deixar de viajar. A nossa garantia de segurança provou ser à prova de crises.
                   </p>
                 </div>
               </div>
@@ -273,9 +277,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Chegámos a Faro</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">Chegámos ao Algarve (Aeroporto de Faro)</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Expandimos para o Algarve, levando o nosso serviço de excelência ao Aeroporto de Faro e aos milhares de turistas que visitam a região.
+                    O Sul chamou por nós. Expandimos a operação para o Aeroporto de Faro, trazendo o nosso famoso serviço de recolha no terminal para os milhares de turistas e residentes que voam a partir do Algarve.
                   </p>
                 </div>
               </div>
@@ -287,9 +291,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Chegámos ao Porto</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2">Conquista do Norte (Aeroporto do Porto)</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    A conquista do Norte! Abrimos no Aeroporto do Porto, completando a nossa presença nos três principais aeroportos de Portugal.
+                    A peça que faltava. Chegámos ao Aeroporto Francisco Sá Carneiro. Com a abertura no Porto, a Airpark tornou-se uma referência nacional, cobrindo os três principais aeroportos de Portugal com a mesma qualidade e preços competitivos.
                   </p>
                 </div>
               </div>
@@ -301,9 +305,12 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm border border-gold/30">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">10 Anos + Internacionalização</h4>
+                  <h4 className="text-xl text-gray-800 font-medium mb-2 flex items-center gap-2">
+                    10 Anos e o Salto Internacional: ¡Hola, Madrid!
+                    <span className="text-2xl">🇵🇹🇪🇸</span>
+                  </h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Celebramos uma década de história, sempre a contar contigo. E em Março, damos o salto internacional com a abertura do nosso parque em Madrid!
+                    Celebramos uma década com mais de 100.000 clientes satisfeitos. E o melhor presente? A internacionalização. Em março, levamos a qualidade portuguesa além-fronteiras com a abertura do nosso primeiro parque no Aeroporto de Madrid. A viagem está apenas a começar.
                   </p>
                 </div>
               </div>

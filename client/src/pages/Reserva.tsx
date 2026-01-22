@@ -30,15 +30,31 @@ export default function Reserva() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Header Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Soluções Airpark em Cada Hub Nacional
+      {/* Header Section with Background Image */}
+      <section className="relative py-32 px-4 overflow-hidden">
+        {/* Background Image with Blur */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/banner_prata.png)',
+            filter: 'blur(3px)',
+            transform: 'scale(1.1)'
+          }}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30" />
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+            Uma Década de Excelência
           </h1>
+          <p className="text-2xl md:text-3xl text-white/95 font-light mb-8 drop-shadow-md">
+            Estacionamento Aeroportuário Premium
+          </p>
           <div className="w-24 h-1 bg-[#D4A574] mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Escolha o seu aeroporto e reserve com as melhores condições da campanha de 10 anos.
+          <p className="text-xl md:text-2xl text-white font-medium drop-shadow-md">
+            Escolha onde quer fazer a sua reserva
           </p>
         </div>
       </section>

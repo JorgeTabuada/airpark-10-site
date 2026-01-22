@@ -24,9 +24,11 @@ export default function Navbar() {
           <a href="#materiais" className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors">Materiais</a>
           <a href="#ofertas" className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors">Ofertas</a>
           <Link href="/faq" className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors">FAQ</Link>
-          <Button className="bg-gold hover:bg-yellow-600 text-black font-bold rounded-full px-6">
-            Reservar Agora
-          </Button>
+          <Link href="/reserva">
+            <Button className="bg-gold hover:bg-yellow-600 text-black font-bold rounded-full px-6">
+              Reservar Agora
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -42,9 +44,11 @@ export default function Navbar() {
           <a href="#materiais" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>Materiais</a>
           <a href="#ofertas" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>Ofertas</a>
           <Link href="/faq" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>FAQ</Link>
-          <Button className="bg-gold text-black font-bold w-full">
-            Reservar Agora
-          </Button>
+          <Link href="/reserva">
+            <Button className="bg-gold text-black font-bold w-full">
+              Reservar Agora
+            </Button>
+          </Link>
         </div>
       )}
     </nav>
