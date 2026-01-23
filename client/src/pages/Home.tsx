@@ -139,7 +139,7 @@ export default function Home() {
               <div className="mb-8 p-6 bg-white rounded-xl border border-gray-200">
                 <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                   <span className="bg-gold text-black w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                  Bilhete Vitalício para as Atribuições
+                  Passaporte Vitalício para as Atribuições
                 </h4>
                 <p className="text-gray-600">
                   Quando fazes uma reserva, entras automaticamente nas atribuições mensais <strong>até à data da tua viagem</strong>. Por exemplo: se reservares agora para viajar em Julho, participas nas atribuições de Janeiro, Fevereiro, Março, Abril, Maio e Junho. Depois da tua viagem, só voltarás a participar quando fizeres uma nova reserva. <strong>Resumindo: Reservas uma vez, habilitas-te aos prémios todos até à data da tua viagem.</strong>
@@ -226,7 +226,7 @@ export default function Home() {
                 <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
                   <h4 className="text-xl text-gray-800 font-medium mb-2">A Revolução do Estacionamento em Lisboa</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Nasce a Airpark (Multi Park S.A.) com um desafio claro à concorrência: provar que o Valet Parking no Aeroporto de Lisboa podia ser um serviço premium a preços Low Cost. Começámos com uma missão: a sua viagem começa quando nos entrega a chave.
+                    Nasce a Airpark (Multipark S.A.) com um desafio claro à concorrência: provar que o Valet Parking no Aeroporto de Lisboa podia ser um serviço premium a preços Low Cost. Começámos com uma missão: a sua viagem começa quando nos entrega a chave.
                   </p>
                 </div>
               </div>
