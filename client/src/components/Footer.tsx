@@ -1,7 +1,19 @@
 import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
+import { useEffect } from "react";
 
 export default function Footer() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    // Scroll automático quando vem do Footer com hash #scroll-down
+    if (location.includes('#scroll-down')) {
+      setTimeout(() => {
+        window.scrollTo({ top: 600, behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <footer className="bg-[#1e3a5f] text-white py-12">
       <div className="container mx-auto px-4">
@@ -36,9 +48,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-6">Aeroportos</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://www.airpark.pt/" className="text-gray-300 hover:text-gold transition-colors">Aeroporto de Lisboa</a></li>
-              <li><a href="https://www.airpark.pt/" className="text-gray-300 hover:text-gold transition-colors">Aeroporto do Porto</a></li>
-              <li><a href="https://www.airpark.pt/" className="text-gray-300 hover:text-gold transition-colors">Aeroporto de Faro</a></li>
+              <li><Link href="/reserva#scroll-down" className="text-gray-300 hover:text-gold transition-colors">Aeroporto de Lisboa</Link></li>
+              <li><Link href="/reserva#scroll-down" className="text-gray-300 hover:text-gold transition-colors">Aeroporto do Porto</Link></li>
+              <li><Link href="/reserva#scroll-down" className="text-gray-300 hover:text-gold transition-colors">Aeroporto de Faro</Link></li>
               <li className="pt-2">
                 <span className="text-gray-400 text-xs">Disponível 24h/dia</span>
               </li>

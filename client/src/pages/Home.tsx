@@ -27,9 +27,9 @@ export default function Home() {
                 Ver Ofertas do Mês
               </Button>
             </a>
-            <a href="#timeline">
-              <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 font-medium text-base px-6 py-3 rounded-full">
-                Conhecer a História
+            <a href="/reserva">
+              <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-6 py-3 rounded-full shadow-lg">
+                Reservar Agora
               </Button>
             </a>
           </div>

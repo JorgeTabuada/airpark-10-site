@@ -1,7 +1,19 @@
 import { ArrowRight, MapPin, Home } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
+import { useEffect } from "react";
 
 export default function Reserva() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    // Scroll automático quando vem do Footer com hash #scroll-down
+    if (window.location.hash === '#scroll-down') {
+      setTimeout(() => {
+        window.scrollTo({ top: 150, behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location]);
+
   const airports = [
     {
       id: "lisboa",
