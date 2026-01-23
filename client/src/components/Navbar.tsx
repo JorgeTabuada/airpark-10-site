@@ -39,7 +39,6 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-b border-gray-200 p-4 flex flex-col gap-4">
-          <a href="#timeline" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>A Nossa História</a>
           <a href="#ofertas" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>Ofertas</a>
           <Link href="/faq" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link href="/reserva">
@@ -47,6 +46,7 @@ export default function Navbar() {
               Reservar Agora
             </Button>
           </Link>
+          <a href="#timeline" className="text-gray-700 hover:text-gold" onClick={() => setIsOpen(false)}>Conhecer a História</a>
         </div>
       )}
     </nav>

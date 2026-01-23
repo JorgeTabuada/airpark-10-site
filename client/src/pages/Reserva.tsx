@@ -1,4 +1,5 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, Home } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Reserva() {
   const airports = [
@@ -30,40 +31,19 @@ export default function Reserva() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Top Banner with Airport Buttons */}
-      <section className="bg-gradient-to-r from-[#003D82] to-[#0052a8] py-6 px-4">
+      {/* Back to Home Button */}
+      <div className="bg-white border-b border-gray-200 py-3 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <h2 className="text-white font-bold text-lg sm:text-xl">Escolha o seu aeroporto:</h2>
-            <div className="flex flex-wrap justify-center gap-3">
-              {airports.map((airport) => (
-                <a
-                  key={airport.id}
-                  href={airport.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="bg-white hover:bg-gray-100 text-[#003D82] font-bold text-base px-6 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-                    {airport.badge}
-                  </button>
-                </a>
-              ))}
-            </div>
-          </div>
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 text-gray-600 hover:text-[#003D82] transition-colors text-sm">
+              <Home className="w-4 h-4" />
+              <span>Voltar ao Início</span>
+            </a>
+          </Link>
         </div>
-      </section>
+      </div>
 
-      {/* Hero Image Section */}
-      <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
-        <img 
-          src="/images/banner_prata.png" 
-          alt="Airpark 10 Anos - Uma Década de Excelência em Estacionamento Aeroportuário Premium"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-      </section>
-
-      {/* Airports Grid */}
+      {/* Airports Grid - MOVED TO TOP */}
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {airports.map((airport) => (
@@ -71,22 +51,35 @@ export default function Reserva() {
               key={airport.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Airport Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={airport.image}
-                  alt={airport.name}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // Fallback para cor sólida se a imagem não carregar
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                  }}
-                />
-                <div className="absolute top-4 right-4 bg-[#003D82] text-white px-4 py-2 rounded-full font-bold text-sm">
-                  {airport.badge}
+              {/* Airport Image - Clickable */}
+              <a
+                href={airport.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative h-64 overflow-hidden cursor-pointer group">
+                  <img
+                    src={airport.image}
+                    alt={airport.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      // Fallback para cor sólida se a imagem não carregar
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                    }}
+                  />
+                  <div className="absolute top-4 right-4 bg-[#003D82] text-white px-4 py-2 rounded-full font-bold text-sm">
+                    {airport.badge}
+                  </div>
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Reservar Agora →
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </a>
 
               {/* Airport Info */}
               <div className="p-6">
@@ -112,6 +105,16 @@ export default function Reserva() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Hero Image Section - MOVED TO BOTTOM */}
+      <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
+        <img 
+          src="/images/banner_prata.png" 
+          alt="Airpark 10 Anos - Uma Década de Excelência em Estacionamento Aeroportuário Premium"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
       </section>
 
       {/* Benefits Section */}

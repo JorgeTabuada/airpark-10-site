@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         {/* Buttons below image */}
-        <div className="text-center px-4 py-8 bg-white">
+        <div className="text-center px-4 py-6 bg-white">
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="#ofertas">
               <Button className="bg-gold hover:bg-yellow-600 text-black font-bold text-base px-6 py-3 rounded-full shadow-lg">

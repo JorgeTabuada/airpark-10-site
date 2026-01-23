@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Download } from 'lucide-react';
 
 const TermosCondicoes: React.FC = () => {
   return (
@@ -15,12 +15,24 @@ const TermosCondicoes: React.FC = () => {
             <ArrowLeft size={20} />
             Voltar à página inicial
           </Link>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">
-            Termos e Condições
-          </h1>
-          <p className="text-gray-300 text-lg">
-            Campanha Promocional "10 Anos, 1 Ano de Prémios"
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold mb-2">
+                Termos e Condições
+              </h1>
+              <p className="text-gray-300 text-lg">
+                Campanha Promocional "10 Anos, 1 Ano de Prémios"
+              </p>
+            </div>
+            <a 
+              href="/termos-e-condicoes.pdf" 
+              download
+              className="inline-flex items-center gap-2 bg-[#c9a961] hover:bg-[#b89851] text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg"
+            >
+              <Download size={20} />
+              Descarregar PDF
+            </a>
+          </div>
         </div>
       </div>
 
