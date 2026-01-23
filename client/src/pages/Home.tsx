@@ -99,7 +99,7 @@ export default function Home() {
             {/* Rules Section */}
             <div className="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-200 mb-12">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
-                🎮 COMO JOGAR & GANHAR: AS REGRAS DA FESTA
+                🎮 COMO PARTICIPAR & GANHAR: AS REGRAS DA FESTA
               </h3>
               <p className="text-gray-600 text-center mb-8">
                 Parece muita coisa? Não é. O resumo é: <strong>quem chega primeiro, ganha mais.</strong>
@@ -115,7 +115,7 @@ export default function Home() {
                   O Prémio de Arranque (Janeiro & Fevereiro): A Escapadinha 🏨
                 </h4>
                 <p className="text-gray-600">
-                  Para começar em grande, fundimos os primeiros meses. Quem fizer reserva agora (ainda em Janeiro) ou durante o mês de Fevereiro, entra automaticamente no sorteio de uma <strong>Escapadinha de Fim de Semana</strong>. Queremos que descanses — não só do estacionamento, mas da vida.
+                  Para começar em grande, fundimos os primeiros meses. Quem fizer reserva agora (ainda em Janeiro) ou durante o mês de Fevereiro, entra automaticamente na atribuição de uma <strong>Escapadinha de Fim de Semana</strong>. Queremos que descanses — não só do estacionamento, mas da vida.
                 </p>
               </div>
 
@@ -139,10 +139,10 @@ export default function Home() {
               <div className="mb-8 p-6 bg-white rounded-xl border border-gray-200">
                 <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                   <span className="bg-gold text-black w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                  Bilhete Vitalício para os Sorteios
+                  Bilhete Vitalício para as Atribuições
                 </h4>
                 <p className="text-gray-600">
-                  Quando fazes uma reserva, entras automaticamente nos sorteios mensais <strong>até à data da tua viagem</strong>. Por exemplo: se reservares agora para viajar em Julho, participas nos sorteios de Janeiro, Fevereiro, Março, Abril, Maio e Junho. Depois da tua viagem, só voltarás a participar quando fizeres uma nova reserva. <strong>Resumindo: Reservas uma vez, habilitas-te aos prémios todos até à data da tua viagem.</strong>
+                  Quando fazes uma reserva, entras automaticamente nas atribuições mensais <strong>até à data da tua viagem</strong>. Por exemplo: se reservares agora para viajar em Julho, participas nas atribuições de Janeiro, Fevereiro, Março, Abril, Maio e Junho. Depois da tua viagem, só voltarás a participar quando fizeres uma nova reserva. <strong>Resumindo: Reservas uma vez, habilitas-te aos prémios todos até à data da tua viagem.</strong>
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
                   O Grande Final (Dezembro)
                 </h4>
                 <p className="text-gray-600 mb-4">
-                  Todas as reservas do ano (sim, a tua de agora também) entram no pote para o "Santo Graal". Não é um lugar qualquer, é o pacote VIP completo:
+                  Todas as reservas do ano (sim, a tua de agora também) entram na corrida para o "Santo Graal". Não é um lugar qualquer, é o pacote VIP completo:
                 </p>
                 <div className="bg-white p-4 rounded-lg border border-gold/20">
                   <p className="text-center font-bold text-lg text-gray-800 mb-2">
@@ -187,7 +187,7 @@ export default function Home() {
                 </p>
                 <p className="flex items-start gap-2">
                   <span>👉</span>
-                  <span><strong>Habilita-te:</strong> Entras no sorteio da Escapadinha e nos próximos.</span>
+                  <span><strong>Habilita-te:</strong> Entras na atribuição da Escapadinha e nas próximas.</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span>👉</span>
@@ -442,7 +442,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-800 mb-1">Janeiro</h3>
                 <p className="text-gold font-medium text-sm mb-3">Escapadinha de Inverno</p>
                 <p className="text-gray-600 text-sm mb-5">
-                  10% de desconto + participação no sorteio da Escapadinha de Fim de Semana.
+                  10% de cashback na conta + participação na atribuição da Escapadinha de Fim de Semana.
                 </p>
                 <a href="/reserva">
                   <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
@@ -468,7 +468,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-800 mb-1">Fevereiro</h3>
                 <p className="text-gold font-medium text-sm mb-3">Escapadinha Romântica</p>
                 <p className="text-gray-600 text-sm mb-5">
-                  5% de desconto extra + participação no sorteio da Escapadinha de Fim de Semana.
+                  5% de cashback extra na conta + participação na atribuição da Escapadinha de Fim de Semana.
                 </p>
                 <a href="/reserva">
                   <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
@@ -485,7 +485,7 @@ export default function Home() {
                   <Trophy size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-1">Março</h3>
-                <p className="text-gray-500 font-medium text-sm mb-3">Sorteio Premium</p>
+                <p className="text-gray-500 font-medium text-sm mb-3">Passatempo Premium</p>
                 <p className="text-gray-500 text-sm mb-5">
                   Habilite-se a ganhar uma viagem para dois.
                 </p>
