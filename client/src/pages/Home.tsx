@@ -218,103 +218,146 @@ export default function Home() {
             {/* Timeline Items */}
             <div className="space-y-12">
               {/* 2016 - Abertura */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2016</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">A Revolução do Estacionamento em Lisboa</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Nasce a Airpark (Multipark S.A.) com um desafio claro à concorrência: provar que o Valet Parking no Aeroporto de Lisboa podia ser um serviço premium a preços Low Cost. Começámos com uma missão: a sua viagem começa quando nos entrega a chave.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/fundo_1_valet_premium.png" alt="Airpark 2016 - Valet Premium Lisboa" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">A Revolução do Estacionamento em Lisboa</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Nasce a Airpark (Multipark S.A.) com um desafio claro à concorrência: provar que o Valet Parking no Aeroporto de Lisboa podia ser um serviço premium a preços Low Cost. Começámos com uma missão: a sua viagem começa quando nos entrega a chave.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* 2017 - Segundo Parque */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2017</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Mais Espaço, A Mesma Confiança</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    A procura disparou. Para responder aos viajantes frequentes, inaugurámos o segundo parque, reforçando a segurança e a capacidade de resposta. O conceito de "Vá Descansado" começa a ganhar fama entre os passageiros.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/fundo_2_parque_seguro.png" alt="Airpark 2017 - Parque Seguro" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">Mais Espaço, A Mesma Confiança</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      A procura disparou. Para responder aos viajantes frequentes, inaugurámos o segundo parque, reforçando a segurança e a capacidade de resposta. O conceito de "Vá Descansado" começa a ganhar fama entre os passageiros.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* 2019 - Terceiro Parque Lisboa */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2019</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Liderança no Aeroporto Humberto Delgado</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Abertura do terceiro parque em Lisboa. Consolidámos a nossa posição como a alternativa nº1 aos parques oficiais, oferecendo serviços extra como lavagens e carregamento elétrico, essenciais para quem viaja em negócios ou lazer.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/lisboa-airport.jpg" alt="Aeroporto de Lisboa" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">Liderança no Aeroporto Humberto Delgado</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Abertura do terceiro parque em Lisboa. Consolidámos a nossa posição como a alternativa nº1 aos parques oficiais, oferecendo serviços extra como lavagens e carregamento elétrico, essenciais para quem viaja em negócios ou lazer.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* 2020 - Pandemia */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2020</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Resiliência e Segurança</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Num ano em que o mundo parou, a Airpark manteve-se firme. Reforçámos protocolos de higiene e mantivemos o serviço ativo para quem não podia deixar de viajar. A nossa garantia de segurança provou ser à prova de crises.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/fundo_3_abstrato_comemorativo.png" alt="Airpark 2020 - Resiliência" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">Resiliência e Segurança</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Num ano em que o mundo parou, a Airpark manteve-se firme. Reforçámos protocolos de higiene e mantivemos o serviço ativo para quem não podia deixar de viajar. A nossa garantia de segurança provou ser à prova de crises.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* 2022 - Faro */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2022</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Chegámos ao Algarve (Aeroporto de Faro)</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    O Sul chamou por nós. Expandimos a operação para o Aeroporto de Faro, trazendo o nosso famoso serviço de recolha no terminal para os milhares de turistas e residentes que voam a partir do Algarve.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/faro-airport.jpg" alt="Aeroporto de Faro" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">Chegámos ao Algarve (Aeroporto de Faro)</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      O Sul chamou por nós. Expandimos a operação para o Aeroporto de Faro, trazendo o nosso famoso serviço de recolha no terminal para os milhares de turistas e residentes que voam a partir do Algarve.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* 2024 - Porto */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2024</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2">Conquista do Norte (Aeroporto do Porto)</h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    A peça que faltava. Chegámos ao Aeroporto Francisco Sá Carneiro. Com a abertura no Porto, a Airpark tornou-se uma referência nacional, cobrindo os três principais aeroportos de Portugal com a mesma qualidade e preços competitivos.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/porto-airport.jpg" alt="Aeroporto do Porto" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2">Conquista do Norte (Aeroporto do Porto)</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      A peça que faltava. Chegámos ao Aeroporto Francisco Sá Carneiro. Com a abertura no Porto, a Airpark tornou-se uma referência nacional, cobrindo os três principais aeroportos de Portugal com a mesma qualidade e preços competitivos.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* 2026 - 10 Anos + Madrid */}
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <div className="flex-shrink-0 w-24 text-center">
+              {/* 2026 - 10 Anos + Madrid + Vencedor */}
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+                <div className="flex-shrink-0 w-24 text-center pt-2">
                   <span className="text-3xl font-bold text-gold">2026</span>
                 </div>
-                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0"></div>
-                <div className="flex-1 bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm border border-gold/30">
-                  <h4 className="text-xl text-gray-800 font-medium mb-2 flex items-center gap-2">
-                    10 Anos e o Salto Internacional: ¡Hola, Madrid!
-                    <span className="text-2xl">🇵🇹🇪🇸</span>
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Celebramos uma década com mais de 100.000 clientes satisfeitos. E o melhor presente? A internacionalização. Em março, levamos a qualidade portuguesa além-fronteiras com a abertura do nosso primeiro parque no Aeroporto de Madrid. A viagem está apenas a começar.
-                  </p>
+                <div className="hidden md:block w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(218,165,32,0.8)] flex-shrink-0 mt-3"></div>
+                <div className="flex-1 rounded-xl shadow-sm overflow-hidden border-2 border-gold/50">
+                  <div className="h-40 overflow-hidden">
+                    <img src="/images/post_linkedin_10anos.png" alt="Airpark 10 Anos" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6 bg-gradient-to-br from-[#003D82]/5 to-gold/5">
+                    <h4 className="text-xl text-gray-800 font-medium mb-2 flex items-center gap-2">
+                      10 Anos e o Salto Internacional: ¡Hola, Madrid!
+                      <span className="text-2xl">🇵🇹🇪🇸</span>
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Celebramos uma década com mais de 100.000 clientes satisfeitos. E o melhor presente? A internacionalização. Em março, levamos a qualidade portuguesa além-fronteiras com a abertura do nosso primeiro parque no Aeroporto de Madrid. A viagem está apenas a começar.
+                    </p>
+                    <div className="bg-white border border-green-200 rounded-lg p-4 flex items-center gap-4">
+                      <div className="text-3xl">🏆</div>
+                      <div>
+                        <p className="text-green-700 font-bold text-sm">1.º Vencedor da Campanha 10 Anos</p>
+                        <p className="text-gray-800 font-bold">Bruno Araújo</p>
+                        <p className="text-gray-500 text-sm">Escapadinha no Alambique Hotel Resort &amp; Spa — Jan/Fev 2026</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
