@@ -426,47 +426,22 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {/* Janeiro - 10% */}
-            <Card className="bg-white border-gold/30 relative overflow-hidden group">
-              <div className="absolute top-3 right-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">
-                ATIVO
-              </div>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src="/images/janeiro_escapadinha.png" 
-                  alt="Janeiro - Escapadinha de Inverno"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-5 md:p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-1">Janeiro</h3>
-                <p className="text-gold font-medium text-sm mb-3">Escapadinha de Inverno</p>
-                <p className="text-gray-600 text-sm mb-5">
-                  10% de cashback na conta + participação na atribuição da Escapadinha de Fim de Semana.
-                </p>
-                <a href="/reserva">
-                  <Button className="w-full bg-gold hover:bg-yellow-600 text-black font-bold text-sm">
-                    Aproveitar Agora
-                  </Button>
-                </a>
-              </CardContent>
-            </Card>
-
-            {/* Fevereiro - ENCERRADO - Vencedor Bruno Araújo */}
-            <Card className="bg-white border-gray-200 relative overflow-hidden group">
+            {/* Janeiro + Fevereiro - ENCERRADO - Vencedor Bruno Araújo */}
+            <Card className="bg-white border-gray-200 relative overflow-hidden group sm:col-span-2 lg:col-span-1">
               <div className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">
                 ENCERRADO
               </div>
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img 
                   src="/images/fevereiro_vencedor.png" 
-                  alt="Vencedor Fevereiro - Bruno Araújo"
+                  alt="Vencedor Janeiro/Fevereiro - Bruno Araújo"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardContent className="p-5 md:p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-1">Fevereiro</h3>
-                <p className="text-green-600 font-bold text-sm mb-1">🏆 Vencedor: Bruno Araújo</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-1">Janeiro &amp; Fevereiro</h3>
+                <p className="text-gray-500 font-medium text-sm mb-1">Escapadinha no Alambique Hotel Resort &amp; Spa</p>
+                <p className="text-green-600 font-bold text-sm mb-3">🏆 Vencedor: Bruno Araújo</p>
                 <p className="text-gray-500 text-sm mb-5">
                   Parabéns, Bruno! Ganhaste uma noite de pura relaxa no Alambique Hotel Resort &amp; Spa.
                 </p>
